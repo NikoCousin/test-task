@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <section class="container">
+        <h1>Group Details</h1>
+        <form class="form-group grid">
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="form-control">
+                <p>Group name 2</p>
+                <input type="text" placeholder="toast it">
+            </div>
+            <div class="form-control">
+                <p>Item Choice</p>
+                <select name="" id="">
+                    <option value="">Item 1</option>
+                </select>
+            </div>
+            <div class="form-control inline">
+                <p>show images</p>
+                <div id="button-1">
+                    <input id="toggle" class="toggle-control" type="checkbox">
+                    <label for="toggle"></label>
+                </div>
+            </div>
+            <div class="form-control inline">
+                <p> Visible if other items selecte</p>
+                <div id="button-2">
+                    <input id="toggle-2" class="toggle-control" type="checkbox">
+                    <label for="toggle-2"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <select name="" id="">
+                    <option value="">AND</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <select name="" id="">
+                    <option value="">Bread/Rye</option>
+                </select>
+            </div>
+            <button type="submit">Add variable</button>
+        </form>
+
+        <hr>
+
+        <div class="group-item">
+            <h1>Group Item</h1>
+            <table  id="table-1" style="width:900px">
+                <tbody class="js-sortable-disabled  sortable">
+                    <tr class="disabled">
+                        <th>default</th>
+                        <th>item image</th>
+                        <th>item name</th>
+                        <th>additional price</th>
+                        <th>in stock</th>
+                        <th>Subcategory</th>
+                    </tr>
+                    <tr id="tempRow">
+                        <td>
+                          <div class="form-group-not d-relative  js-handle">
+                              <div class="burger">
+                                  <span></span>
+                              </div>
+                              <input type="checkbox" id="javascript">
+                              <label for="javascript"></label>
+                            </div>
+                         </td>
+                        <td>
+                          <div class="table-pic">
+                             <i class="fas fa-camera"></i>
+                          </div>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <div class="dollar-signed">
+                                <input type="number" placeholder="1.5">
+                            </div>
+                        </td>
+                        <td>
+                          <div id="button-3">
+                              <input id="toggle-3" class="toggle-control" type="checkbox">
+                              <label for="toggle-3"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="button-4">
+                              <input id="toggle-4" class="toggle-control" type="checkbox">
+                              <label for="toggle-4"></label>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <div class="form-group-not d-relative  js-handle">
+                              <div class="burger">
+                                  <span></span>
+                              </div>
+                              <input type="checkbox" id="javascript">
+                              <label for="javascript"></label>
+                            </div>
+                         </td>
+                        <td>
+                          <div class="table-pic">
+                             <i class="fas fa-camera"></i>
+                          </div>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <div class="dollar-signed">
+                                <input type="number" placeholder="1.5">
+                            </div>
+                        </td>
+                        <td>
+                          <div id="button-3">
+                              <input id="toggle-3" class="toggle-control" type="checkbox">
+                              <label for="toggle-3"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="button-4">
+                              <input id="toggle-4" class="toggle-control" type="checkbox">
+                              <label for="toggle-4"></label>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+        <button id="btn-1" class="add-new-item-btn">add new item</button>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <h1>Group Details</h1>
+        <form class="form-group grid">
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="form-control">
+                <p>Group name 2</p>
+                <input type="text" placeholder="toast it">
+            </div>
+            <div class="form-control">
+                <p>Item Choice</p>
+                <select name="" id="">
+                    <option value="">Item 1</option>
+                </select>
+            </div>
+            <div class="form-control inline">
+                <p>show images</p>
+                <div id="button-6">
+                    <input id="toggle-6" class="toggle-control" type="checkbox">
+                    <label for="toggle-6"></label>
+                </div>
+            </div>
+            <div class="form-control inline">
+                <p> Visible if other items selecte</p>
+                <div id="button-5">
+                    <input id="toggle-5" class="toggle-control" type="checkbox">
+                    <label for="toggle-5"></label>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        <div class="group-item">
+            <h1>Group Item</h1>
+            <table  id="table-2" style="width:900px">
+                <tbody class="js-sortable-disabled  sortable">
+                    <tr class="disabled">
+                        <th>default</th>
+                        <th>item image</th>
+                        <th>item name</th>
+                        <th>additional price</th>
+                        <th>in stock</th>
+                        <th>Subcategory</th>
+                    </tr>
+                    <tr>
+                        <td>
+                          <div class="form-group-not d-relative  js-handle">
+                              <div class="burger">
+                                  <span></span>
+                              </div>
+                              <input type="checkbox" id="javascript2">
+                              <label for="javascript2"></label>
+                            </div>
+                         </td>
+                        <td>
+                          <div class="table-pic">
+                             <i class="fas fa-camera"></i>
+                          </div>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <div class="dollar-signed">
+                                <input type="number" placeholder="1.5">
+                            </div>
+                        </td>
+                        <td>
+                          <div id="button-7">
+                              <input id="toggle-7" class="toggle-control" type="checkbox">
+                              <label for="toggle-7"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="button-8">
+                              <input id="toggle-8" class="toggle-control" type="checkbox">
+                              <label for="toggle-8"></label>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <div class="form-group-not d-relative  js-handle">
+                              <div class="burger">
+                                  <span></span>
+                              </div>
+                              <input type="checkbox" id="javascript2">
+                              <label for="javascript2"></label>
+                            </div>
+                         </td>
+                        <td>
+                          <div class="table-pic">
+                             <i class="fas fa-camera"></i>
+                          </div>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <div class="dollar-signed">
+                                <input type="number" placeholder="1.5">
+                            </div>
+                        </td>
+                        <td>
+                          <div id="button-7">
+                              <input id="toggle-7" class="toggle-control" type="checkbox">
+                              <label for="toggle-7"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="button-8">
+                              <input id="toggle-8" class="toggle-control" type="checkbox">
+                              <label for="toggle-8"></label>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+        <button id="btn-2" class="add-new-item-btn">add new item</button>
+    </section>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5sortable/0.10.0/html5sortable.min.js" integrity="sha512-tBlVMq89XaEC9iU5LyRjP2Vxs8SmVhEHGbv2Co6SbGa14Wsxy2qZN0jadrN+Xn5AifORaUbvZcG21/ExcNfWDA==" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

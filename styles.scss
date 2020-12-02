@@ -1,0 +1,280 @@
+@import "utilities";
+
+html,
+body,
+h1,
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #3c4d5f;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 16px;
+  margin-bottom: 41px;
+}
+
+p {
+  font-size: 13px;
+}
+
+input,
+select {
+  border: 1px solid #dde0e7;
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  width: 269px;
+  box-sizing: inherit;
+
+  &:focus {
+    border: 1px solid #caccd1;
+  }
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.container {
+  max-width: 689px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  position: relative;
+
+  .burger {
+    top: 50px;
+  }
+
+  .delete-btn {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    cursor: pointer;
+    color: #d7d6d6;
+  }
+}
+
+button {
+  background: #5ba6ff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 120px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+}
+
+.form-control {
+  & > p {
+    margin-bottom: 15px;
+  }
+
+  &.inline {
+    display: flex;
+    align-items: center;
+    & > p {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.group-item {
+  overflow-x: scroll;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  // padding-top: 1px;
+}
+
+td,
+th {
+  border-bottom: 1px dashed #d3d3e3;
+  padding: 10px 0;
+}
+
+tr th {
+  text-align: left;
+}
+
+tr input {
+  width: inherit;
+}
+
+.table-pic {
+  border: 1px solid #d3d3e3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: #d3d3e3;
+  cursor: pointer;
+}
+
+.checkmark-wrap {
+  input {
+    width: 19.5px;
+    height: 19.5px;
+
+    &:checked {
+      background: green;
+    }
+  }
+}
+
+.form-group-not {
+  display: block;
+  // margin-bottom: 15px;
+}
+
+.form-group-not input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group-not label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group-not label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #01bd70;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group-not input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 12px;
+  width: 6px;
+  height: 16px;
+  background: #ffffff;
+  border: solid #01bd70;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.d-relative {
+  position: relative;
+}
+
+.burger {
+  width: 18px;
+  position: absolute;
+  left: -30px;
+  top: 12px;
+  height: 20px;
+  cursor: pointer;
+
+  span {
+    height: 2px;
+    width: 100%;
+    background: #d3d3e3;
+    position: relative;
+    display: block;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #d3d3e3;
+      left: 0;
+    }
+
+    &::after {
+      bottom: -5px;
+    }
+
+    &::before {
+      bottom: 5px;
+    }
+  }
+}
+
+.dollar-signed {
+  position: relative;
+
+  &:after {
+    content: "$";
+    position: absolute;
+    left: 15px;
+    top: 7px;
+  }
+
+  input {
+    text-align: center;
+    // padding-left: 100px;
+    box-sizing: border-box;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d7d6d6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d7d6d6;
+}
+
+.add-new-item-btn {
+  background: none;
+  color: #5ba6ff;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 15px;
+}
